@@ -8,6 +8,7 @@ using ButterFlyApi.Interfaces;
 
 namespace ButterFlyApi.Controllers
 {
+    [Validator]
     [ApiController]
     [Route("api/[controller]")]
     public class MathController : ControllerBase
@@ -17,7 +18,7 @@ namespace ButterFlyApi.Controllers
         {
             _math = math;
         }
-        [Validator]
+        
         [HttpGet]
         [Route("addition/{input1}&{input2}")]
         public async Task<double> addition(double input1, double input2)
@@ -26,9 +27,9 @@ namespace ButterFlyApi.Controllers
             return await _math.AddAsync(input1, input2);
 
         }
+
         [HttpGet]
         [Route("additionwithround/{input1}&{input2}&{round}")]
-        [Validator]
         public async Task<double> additionWithRound(double input1, double input2, int round)
         {
 
@@ -36,18 +37,18 @@ namespace ButterFlyApi.Controllers
             
 
         }
+
         [HttpGet]
         [Route("subtruction/{input1}&{input2}")]
-        [Validator]
         public async Task<double> subtruction(double input1, double input2)
         {
 
             return await _math.SubtractionAsync(input1, input2);
 
         }
+
         [HttpGet]
         [Route("subtructionwithround/{input1}&{input2}&{round}")]
-        [Validator]
         public async Task<double> subtructionWithRound(double input1, double input2, int round)
         {
 
@@ -55,42 +56,39 @@ namespace ButterFlyApi.Controllers
             
 
         }
+
         [HttpGet]
         [Route("division/{input1}&{input2}")]
-        [Validator]
         public async Task<double> Division(double input1, double input2)
         {
 
             return await _math.DivisionAsync(input1, input2);
 
         }
+
         [HttpGet]
         [Route("divisionwithround/{input1}&{input2}&{round}")]
-        [Validator]
         public async Task<double> DivisionWithRound(double input1, double input2, int round)
         {
 
             return await _math.DivisionWithRoundAsync(input1, input2, round);
            
-
         }
         [HttpGet]
         [Route("multiplication/{input1}&{input2}")]
-        [Validator]
         public async Task<double> Multiplication(double input1, double input2)
         {
 
             return await _math.MultiplicationAsync(input1, input2);
 
         }
+
         [HttpGet]
         [Route("multiplicationwithround/{input1}&{input2}&{round}")]
-        [Validator]
         public async Task<double> MultiplicationWithRound(double input1, double input2, int round)
         {
 
             return await _math.MultiplicationWithRoundAsync(input1, input2, round);
-            
 
         }
 
