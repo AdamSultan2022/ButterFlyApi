@@ -20,12 +20,12 @@ namespace ButterFlyApi.infrastructure
 
         }
 
-        public async Task<double> Dividing(double number1, double number2)
+        public async Task<double> Division(double number1, double number2)
         {
             return await Task.FromResult<double>(number1 / number2);
         }
 
-        public async Task<double> DividingWithRound(double number1, double number2, int round)
+        public async Task<double> DivisionWithRound(double number1, double number2, int round)
         {
             return await Task.FromResult<double>(Math.Round((number1 / number2), round));
         }

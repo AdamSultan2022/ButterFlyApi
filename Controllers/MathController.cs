@@ -56,21 +56,21 @@ namespace ButterFlyApi.Controllers
 
         }
         [HttpGet]
-        [Route("dividing/{input1}&{input2}")]
+        [Route("division/{input1}&{input2}")]
         [Validator]
-        public async Task<double> Dividing(double input1, double input2)
+        public async Task<double> Division(double input1, double input2)
         {
 
-            return await _math.Dividing(input1, input2);
+            return await _math.Division(input1, input2);
 
         }
         [HttpGet]
-        [Route("dividingwithround/{input1}&{input2}&{round}")]
+        [Route("divisionwithround/{input1}&{input2}&{round}")]
         [Validator]
-        public async Task<double> DividingWithRound(double input1, double input2, int round)
+        public async Task<double> DivisionWithRound(double input1, double input2, int round)
         {
 
-            return await _math.DividingWithRound(input1, input2, round);
+            return await _math.DivisionWithRound(input1, input2, round);
            
 
         }

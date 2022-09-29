@@ -13,8 +13,8 @@ namespace ButterFlyApi.Interfaces
         Task<double> SubtractionWithRound(double number1, double number2, int round);
         Task<double> Multiplication(double number1, double number2);
         Task<double> MultiplicationWithRound(double number1, double number2, int round);
-        Task<double> Dividing(double number1, double number2);
-        Task<double> DividingWithRound(double number1, double number2, int round);
+        Task<double> Division(double number1, double number2);
+        Task<double> DivisionWithRound(double number1, double number2, int round);
 
     }
 }
