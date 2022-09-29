@@ -7,14 +7,14 @@ namespace ButterFlyApi.Interfaces
 {
    public interface IMath
     {
-        Task<double> Add(double number1, double number2);
-        Task<double> AddWithRound(double number1, double number2, int round);
-        Task<double> Subtraction(double number1, double number2);
-        Task<double> SubtractionWithRound(double number1, double number2, int round);
-        Task<double> Multiplication(double number1, double number2);
-        Task<double> MultiplicationWithRound(double number1, double number2, int round);
-        Task<double> Division(double number1, double number2);
-        Task<double> DivisionWithRound(double number1, double number2, int round);
+        Task<double> AddAsync(double number1, double number2);
+        Task<double> AddWithRoundAsync(double number1, double number2, int round);
+        Task<double> SubtractionAsync(double number1, double number2);
+        Task<double> SubtractionWithRoundAsync(double number1, double number2, int round);
+        Task<double> MultiplicationAsync(double number1, double number2);
+        Task<double> MultiplicationWithRoundAsync(double number1, double number2, int round);
+        Task<double> DivisionAsync(double number1, double number2);
+        Task<double> DivisionWithRoundAsync(double number1, double number2, int round);
 
     }
 }

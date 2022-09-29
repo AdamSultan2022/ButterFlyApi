@@ -23,7 +23,7 @@ namespace ButterFlyApi.Controllers
         public async Task<double> addition(double input1, double input2)
         {
 
-            return await _math.Add(input1, input2);
+            return await _math.AddAsync(input1, input2);
 
         }
         [HttpGet]
@@ -32,7 +32,7 @@ namespace ButterFlyApi.Controllers
         public async Task<double> additionWithRound(double input1, double input2, int round)
         {
 
-            return await _math.AddWithRound(input1, input2, round);
+            return await _math.AddWithRoundAsync(input1, input2, round);
             
 
         }
@@ -42,7 +42,7 @@ namespace ButterFlyApi.Controllers
         public async Task<double> subtruction(double input1, double input2)
         {
 
-            return await _math.Subtraction(input1, input2);
+            return await _math.SubtractionAsync(input1, input2);
 
         }
         [HttpGet]
@@ -51,7 +51,7 @@ namespace ButterFlyApi.Controllers
         public async Task<double> subtructionWithRound(double input1, double input2, int round)
         {
 
-            return await _math.SubtractionWithRound(input1, input2, round);
+            return await _math.SubtractionWithRoundAsync(input1, input2, round);
             
 
         }
@@ -61,7 +61,7 @@ namespace ButterFlyApi.Controllers
         public async Task<double> Division(double input1, double input2)
         {
 
-            return await _math.Division(input1, input2);
+            return await _math.DivisionAsync(input1, input2);
 
         }
         [HttpGet]
@@ -70,7 +70,7 @@ namespace ButterFlyApi.Controllers
         public async Task<double> DivisionWithRound(double input1, double input2, int round)
         {
 
-            return await _math.DivisionWithRound(input1, input2, round);
+            return await _math.DivisionWithRoundAsync(input1, input2, round);
            
 
         }
@@ -80,7 +80,7 @@ namespace ButterFlyApi.Controllers
         public async Task<double> Multiplication(double input1, double input2)
         {
 
-            return await _math.Multiplication(input1, input2);
+            return await _math.MultiplicationAsync(input1, input2);
 
         }
         [HttpGet]
@@ -89,7 +89,7 @@ namespace ButterFlyApi.Controllers
         public async Task<double> MultiplicationWithRound(double input1, double input2, int round)
         {
 
-            return await _math.MultiplicationWithRound(input1, input2, round);
+            return await _math.MultiplicationWithRoundAsync(input1, input2, round);
             
 
         }
